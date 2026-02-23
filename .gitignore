@@ -1,0 +1,8 @@
+
+
+privacy_detection/backend/models/
+backend/models/
+
+
+__pycache__/
+*.py[cod]

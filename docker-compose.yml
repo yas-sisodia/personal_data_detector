@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  app:
+    build: .
+    container_name: privacy-detection-ml-app
+
+    ports:
+      - "8000:8000"
+      - "8501:8501"
+
+    volumes:
+      - ./backend/models:/app/backend/models
+      - ./backend/uploads:/app/backend/uploads
