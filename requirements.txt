@@ -3,6 +3,8 @@
 
 
 # uvloop==0.22.1
+uvloop==0.22.1; sys_platform != "win32"
+
 altair==6.0.0
 annotated-doc==0.0.4
 annotated-types==0.7.0
