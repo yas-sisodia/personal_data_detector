@@ -50,7 +50,9 @@ def ensure_bart_model():
         model_name = "facebook/bart-large-mnli"
 
         tokenizer = AutoTokenizer.from_pretrained(model_name)
-        model = AutoModelForSequenceClassification.from_pretrained(model_name, device_map="auto")
+        model = AutoModelForSequenceClassification.from_pretrained(model_name, 
+                                                                #    device_map="auto"
+                                                                   )
 
         tokenizer.save_pretrained(BART_MODEL_PATH)
         model.save_pretrained(BART_MODEL_PATH)
@@ -69,7 +71,7 @@ def get_classifier():
         model = AutoModelForSequenceClassification.from_pretrained(
             BART_MODEL_PATH,
             local_files_only=True,
-            device_map="auto"
+            # device_map="auto"
         )
         tokenizer = AutoTokenizer.from_pretrained(
             BART_MODEL_PATH,
@@ -96,7 +98,9 @@ def ensure_blip2_model():
         model_name = "Salesforce/blip2-opt-2.7b"
 
         processor = AutoProcessor.from_pretrained(model_name, use_fast=False)
-        model = Blip2ForConditionalGeneration.from_pretrained(model_name, device_map="auto")
+        model = Blip2ForConditionalGeneration.from_pretrained(model_name, 
+                                                            #   device_map="auto"
+                                                              )
 
         processor.save_pretrained(BLIP2_MODEL_PATH)
         model.save_pretrained(BLIP2_MODEL_PATH)
