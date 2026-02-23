@@ -44,7 +44,8 @@ _blip_model = None
 # ==========================================================
 
 def ensure_bart_model():
-    if not BART_MODEL_PATH.exists():
+    config_file = BART_MODEL_PATH / "config.json"
+    if not BART_MODEL_PATH.exists() or not config_file.exists():
         print("Downloading BART model...")
         model_name = "facebook/bart-large-mnli"
 
@@ -88,7 +89,8 @@ def get_classifier():
 # ==========================================================
 
 def ensure_blip2_model():
-    if not BLIP2_MODEL_PATH.exists():
+    config_file = BLIP2_MODEL_PATH / "config.json"
+    if not BLIP2_MODEL_PATH.exists() or not config_file.exists():
         print("Downloading BLIP2 model...")
         model_name = "Salesforce/blip2-opt-2.7b"
 
