@@ -17,7 +17,7 @@ from transformers import (
 
 
 # ==========================================================
-# PATH SETUP
+# PATH SETUP - adjust as needed
 # ==========================================================
 
 BASE_PATH = Path(__file__).resolve().parents[2]
