@@ -5,6 +5,31 @@
 
 # Project Setup and Run Instructions
 
+# Setup Instructions
+
+Follow these steps to set up the virtual environment for the project.
+
+## ✅ STEP  — Create Virtual Environment
+
+⚠️ **IMPORTANT:**  
+Run this command in your **terminal** (NOT inside a Jupyter notebook):
+
+### Command:
+
+```bash
+python -m venv .venv
+
+for windows
+
+```bash
+.venv\Scripts\Activate
+
+```bash
+source .venv/bin/activate
+
+Once activated correctly, your terminal prompt will change to show something like this:
+(.venv)
+
 ## Step  — Start Backend (FastAPI) and Frontend (Streamlit)
 
 1. **Start the Backend (FastAPI):**
@@ -73,7 +98,7 @@ This repository contains an image processing pipeline that performs **OCR**, **o
 
 ---
 
-## How It Works
+## How It Works for image
 
 The pipeline processes images through a series of steps as shown in the diagram above. Below is an example of how the system processes an image:
 
@@ -96,6 +121,10 @@ The pipeline processes images through a series of steps as shown in the diagram 
    The final output contains the image text, detected objects, optional caption, and classification labels.
 
  
+## How It Works for video
+
+Video pipeline works saame as image pipeline. Vidos is breaked into frames which are different . we take 2 frames from start and 2 from middle an 2 from end then we proceed according to image pipeline.
+
 
 
 

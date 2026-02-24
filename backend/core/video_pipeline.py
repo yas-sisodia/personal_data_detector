@@ -125,6 +125,33 @@ def build_collage(frames, output_path, num_frames=6):
     return output_path
 
 
+# def build_collage(frames, output_path, num_frames=6):
+#     # Calculate the interval (step size) to select frames evenly spaced
+#     total_frames = len(frames)
+#     step_size = total_frames // num_frames
+
+#     # Select evenly spaced frames
+#     idxs = [i * step_size for i in range(num_frames)]
+    
+#     # Ensure that the last index doesn't exceed the total number of frames
+#     idxs[-1] = min(idxs[-1], total_frames - 1)
+    
+#     # Read and resize the selected frames
+#     imgs = [cv2.resize(cv2.imread(frames[i]), (320, 180)) for i in idxs]
+
+#     # If there are fewer than `num_frames` selected, duplicate the last frame
+#     while len(imgs) < num_frames:
+#         imgs.append(imgs[-1])
+
+#     # Create a collage: stack the images horizontally (3 images per row)
+#     collage = np.vstack([
+#         np.hstack(imgs[:3]),  # First row of 3 frames
+#         np.hstack(imgs[3:6])  # Second row of 3 frames
+#     ])
+
+#     # Save the collage image
+#     cv2.imwrite(output_path, collage)
+#     return output_path
 
 
 # =========================================================
