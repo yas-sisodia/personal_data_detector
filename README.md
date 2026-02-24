@@ -18,7 +18,7 @@ Run this command in your **terminal** (NOT inside a Jupyter notebook):
 ```bash
 python -m venv .venv
 
-for windows
+\for windows
 
 ```bash
 .venv\Scripts\Activate
