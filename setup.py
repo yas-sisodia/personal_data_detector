@@ -179,6 +179,23 @@ def start_backend_and_frontend():
 
     print("Do NOT close these terminals.")
 
+def print_startup_commands():
+    # Command to start the backend (FastAPI)
+    backend_command = "uvicorn backend.main:app --reload"
+    print(f"1. Open a new terminal and activate your virtual environment.")
+    print(f"2. Run the following command to start the backend:\n{backend_command}")
+    print("   Wait until you see: INFO: Application startup complete.")
+    print("   Backend runs at: http://127.0.0.1:8000")
+    print("   Do NOT close this terminal.\n")
+    
+    # Command to start the frontend (Streamlit)
+    frontend_command = "streamlit run frontend/app.py"
+    print(f"3. Open another new terminal and activate your virtual environment again.")
+    print(f"4. Run the following command to start the frontend:\n{frontend_command}")
+    print("   Frontend runs at: http://localhost:8501")
+
+
+
 
 def main():
     """Run all checks and setup steps in order."""
@@ -186,9 +203,10 @@ def main():
     check_tesseract()        # Check if Tesseract is installed
     activate_virtualenv()    # Provide instructions for activating the virtualenv
     install_requirements()   # Install required packages
-    check_huggingface_login()# Ensure user is logged in to Hugging Face
+    # check_huggingface_login()# Ensure user is logged in to Hugging Face
     load_models()            # Load models from the backend
-    start_backend_and_frontend()  # Start Backend (FastAPI) and Frontend (Streamlit)
+    # start_backend_and_frontend()  # Start Backend (FastAPI) and Frontend (Streamlit)
+    print_startup_commands()
 
 
 if __name__ == "__main__":
