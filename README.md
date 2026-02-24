@@ -14,7 +14,6 @@ Follow these steps to set up the virtual environment for the project.
 ⚠️ **IMPORTANT:**  
 Run this command in your **terminal** (NOT inside a Jupyter notebook):
 
-### Command:
 
 ```bash
 python -m venv .venv

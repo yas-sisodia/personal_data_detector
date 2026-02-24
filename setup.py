@@ -129,7 +129,8 @@ def check_huggingface_login():
     """Ensure Hugging Face token is set up and logged in."""
     print("Checking Hugging Face login...")
     try:
-        login("YOUR_HF_ACCESS_TOKEN")
+        token="YOUR_HF_ACCESS_TOKEN"
+        login()
         print("✅ Logged in to Hugging Face Hub successfully!")
     except Exception as e:
         print("❌ Failed to log in to Hugging Face Hub.")
@@ -205,7 +206,7 @@ def main():
     check_tesseract()        # Check if Tesseract is installed
     activate_virtualenv()    # Provide instructions for activating the virtualenv
     install_requirements()   # Install required packages
-    # check_huggingface_login()# Ensure user is logged in to Hugging Face
+    check_huggingface_login()# Ensure user is logged in to Hugging Face
     load_models()            # Load models from the backend
     # start_backend_and_frontend()  # Start Backend (FastAPI) and Frontend (Streamlit)
     print_startup_commands()
