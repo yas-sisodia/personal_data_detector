@@ -107,6 +107,8 @@ def install_python_3_11():
 
 
 def activate_virtualenv():
+    print("create virtual env by running command in terminal in root folder")
+    print("python -m venv .venv")
     """Activate the virtual environment based on the OS."""
     print("Activating virtual environment...")
     if os.name == "nt":
