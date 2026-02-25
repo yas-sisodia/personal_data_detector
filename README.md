@@ -1,35 +1,94 @@
 
 
+# Make sure oython version should be 3.11x(stable and wide support)
 
+
+# ✅ STEP  Install Tesseract OCR
+
+Tesseract is required for OCR (extracting text from images).
+
+---
+
+ 🪟 Windows Users
+
+1. Download Tesseract from:
+   https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w64-setup-v5.2.0.20220712.exe
+
+2. Install it (recommended location):
+   C:\Program Files\Tesseract-OCR
+
+3. Add it to Environment Variables (PATH):
+
+   - Press Windows Key
+   - Search "Environment Variables"
+   - Click "Edit the system environment variables"
+   - Click "Environment Variables"
+   - Under "System Variables", find "Path"
+   - Click "Edit"
+   - Click "New"
+   - Add:
+     C:\Program Files\Tesseract-OCR
+   - Click OK and restart terminal / VS Code
+
+---
+
+🍎 Mac Users
+
+Run this in Terminal:
+
+   `brew install tesseract`
+
+---
+
+## ✅ Verify Installation
+
+After installation, restart your terminal and run:
+
+   `tesseract --version`
+
+If it prints version details → Installation successful.
+
+
+# ✅ STEP  Set your hugging face token to setup.py file 
+
+# ✅ STEP run below command in you terminal 
+
+pip install huggingface_hub
+
+# ✅ STEP Create Virtual Environment
+
+Run this in terminal
+  - python -m venv .venv
+
+Activate Virtual Environment
+  - windows 
+    - .venv/Scripts/Activate
+  - Mac
+    - source .venv/bin/activate
+
+If activated correctly, you will see:
+
+    (.venv)
+
+
+# ✅ STEP — Start Backend (FastAPI) and Frontend (Streamlit)
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
 ## run python setup.py in terminal
 
 # Project Setup and Run Instructions
 
-# Setup Instructions
-
-Follow these steps to set up the virtual environment for the project.
-
-## ✅ STEP  — Create Virtual Environment
-
-⚠️ **IMPORTANT:**  
-Run this command in your **terminal** (NOT inside a Jupyter notebook):
-
-
-```bash
-python -m venv .venv
-
-\for windows
-
-```bash
-.venv\Scripts\Activate
-
-```bash
-source .venv/bin/activate
-
-Once activated correctly, your terminal prompt will change to show something like this:
-(.venv)
-
-## Step  — Start Backend (FastAPI) and Frontend (Streamlit)
+## Step  — Start Backend (FastAPI) and Frontend (Streamlit) -->
 
 1. **Start the Backend (FastAPI):**
 
@@ -97,7 +156,7 @@ This repository contains an image processing pipeline that performs **OCR**, **o
 
 ---
 
-## How It Works for image
+## How It Works
 
 The pipeline processes images through a series of steps as shown in the diagram above. Below is an example of how the system processes an image:
 
@@ -119,7 +178,7 @@ The pipeline processes images through a series of steps as shown in the diagram 
 6. **Output**:
    The final output contains the image text, detected objects, optional caption, and classification labels.
 
- 
+
 ## How It Works for video
 
 Video pipeline works saame as image pipeline. Vidos is breaked into frames which are different . we take 2 frames from start and 2 from middle an 2 from end then we proceed according to image pipeline.

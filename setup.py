@@ -7,6 +7,7 @@ from huggingface_hub import login
 from backend.core.model_manager import load_all_models
 import time
 
+token="YOUR_HF_ACCESS_TOKEN"
 
 def check_tesseract():
     """Check if Tesseract is installed."""
@@ -129,8 +130,8 @@ def check_huggingface_login():
     """Ensure Hugging Face token is set up and logged in."""
     print("Checking Hugging Face login...")
     try:
-        token="YOUR_HF_ACCESS_TOKEN"
-        login()
+        
+        login(token)
         print("✅ Logged in to Hugging Face Hub successfully!")
     except Exception as e:
         print("❌ Failed to log in to Hugging Face Hub.")
