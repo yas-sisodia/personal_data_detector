@@ -67,7 +67,7 @@ If activated correctly, you will see:
 # ✅ STEP  Set your hugging face token to setup.py file
 It is variable named as token in this file 
 
-# ✅ STEP run below command in you terminal 
+# ✅ STEP run below command in your (.venv) terminal 
 
 pip install huggingface_hub
 
