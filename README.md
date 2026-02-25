@@ -49,15 +49,6 @@ After installation, restart your terminal and run:
 
 If it prints version details → Installation successful.
 
-
-# ✅ STEP  Set your hugging face token to setup.py file
-It is variable named as token in this file 
-
-# ✅ STEP run below command in you terminal 
-
-pip install huggingface_hub
-
-
 # ✅ STEP Create Virtual Environment
 
 Run this in terminal
@@ -72,6 +63,16 @@ Activate Virtual Environment
 If activated correctly, you will see:
 
     (.venv)
+
+# ✅ STEP  Set your hugging face token to setup.py file
+It is variable named as token in this file 
+
+# ✅ STEP run below command in you terminal 
+
+pip install huggingface_hub
+
+
+
 
 # ✅ STEP run setup.py by pasting below command in .venv terminal
 
