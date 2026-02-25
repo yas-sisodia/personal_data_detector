@@ -1,6 +1,6 @@
 
 
-# Make sure oython version should be 3.11x(stable and wide support)
+# Make sure python version should be 3.11x(stable and wide support)
 
 
 # ✅ STEP  Install Tesseract OCR
@@ -44,16 +44,19 @@ Run this in Terminal:
 
 After installation, restart your terminal and run:
 
-   `tesseract --version`
+    tesseract --version
+
 
 If it prints version details → Installation successful.
 
 
-# ✅ STEP  Set your hugging face token to setup.py file 
+# ✅ STEP  Set your hugging face token to setup.py file
+It is variable named as token in this file 
 
 # ✅ STEP run below command in you terminal 
 
 pip install huggingface_hub
+
 
 # ✅ STEP Create Virtual Environment
 
