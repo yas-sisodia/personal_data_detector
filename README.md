@@ -2,6 +2,7 @@
 
 # Make sure python version should be 3.11x(stable and wide support)
 
+download link : https://www.python.org/downloads/release/python-3119/
 
 # ✅ STEP  Install Tesseract OCR
 
