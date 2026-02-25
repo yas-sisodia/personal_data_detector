@@ -16,12 +16,12 @@ Tesseract is required for OCR (extracting text from images).
  🪟 Windows Users
 
 1. Download Tesseract from:
-   https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w64-setup-v5.2.0.20220712.exe
+   https://github.com/UB-Mannheim/tesseract/wiki
 
-2. Install it (recommended location):
+3. Install it (recommended location):
    C:\Program Files\Tesseract-OCR
 
-3. Add it to Environment Variables (PATH):
+4. Add it to Environment Variables (PATH):
 
    - Press Windows Key
    - Search "Environment Variables"
