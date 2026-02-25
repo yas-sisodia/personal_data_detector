@@ -131,7 +131,7 @@ def check_huggingface_login():
     print("Checking Hugging Face login...")
     try:
         
-        login(token)
+        login(token=token)
         print("✅ Logged in to Hugging Face Hub successfully!")
     except Exception as e:
         print("❌ Failed to log in to Hugging Face Hub.")

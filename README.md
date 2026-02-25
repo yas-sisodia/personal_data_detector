@@ -73,6 +73,11 @@ If activated correctly, you will see:
 
     (.venv)
 
+# ✅ STEP run setup.py by pasting below command in .venv terminal
+
+
+python setup.py
+
 
 # ✅ STEP — Start Backend (FastAPI) and Frontend (Streamlit)
 
