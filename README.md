@@ -20,8 +20,9 @@ Tesseract is required for OCR (extracting text from images).
 
 3. Install it (recommended location):
    C:\Program Files\Tesseract-OCR
+   If installation path is different copy at time of installation
 
-4. Add it to Environment Variables (PATH):
+5. Add it to Environment Variables (PATH):
 
    - Press Windows Key
    - Search "Environment Variables"
