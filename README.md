@@ -38,6 +38,7 @@ Run this in Terminal:
 
    `brew install tesseract`
 
+
 ---
 
 ## ✅ Verify Installation
@@ -193,8 +194,16 @@ The pipeline processes images through a series of steps as shown in the diagram 
 
 Video pipeline works saame as image pipeline. Vidos is breaked into frames which are different . we take 2 frames from start and 2 from middle an 2 from end then we proceed according to image pipeline.
 
+## UI
+
+![UI](https://github.com/user-attachments/assets/4f1163dc-5e08-4509-986b-4b717052686b)
 
 
+## Results
+
+[chat](https://github.com/user-attachments/files/25533659/chat.pdf)
+
+[food](https://github.com/user-attachments/files/25533670/food.pdf)
 
 <!-- 
 docker build -t personal_data_app . 
