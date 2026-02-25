@@ -55,8 +55,11 @@ Run this in terminal
   - python -m venv .venv
 
 Activate Virtual Environment
-  - windows 
+  - windows -
+  
+    - Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
     - .venv/Scripts/Activate
+
   - Mac
     - source .venv/bin/activate
 
