@@ -72,7 +72,7 @@ Run this in terminal:
 Activate Virtual Environment
   - windows:
   
-      1.     Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+      1.     Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
       
       2.     .venv/Scripts/Activate
 
