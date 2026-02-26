@@ -212,9 +212,9 @@ Video pipeline works saame as image pipeline. Vidos is breaked into frames which
 
 ## Results
 
-[Amage showing chatting](https://github.com/user-attachments/files/25533659/chat.pdf)
+[An image showing chatting](https://github.com/user-attachments/files/25533659/chat.pdf)
 
-[ A general food iamge](https://github.com/user-attachments/files/25533670/food.pdf)
+[ A general food image](https://github.com/user-attachments/files/25533670/food.pdf)
 
 <!-- 
 docker build -t personal_data_app . 
