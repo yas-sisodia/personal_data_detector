@@ -44,7 +44,12 @@ Run this in Terminal:
    <!-- `brew install tesseract` -->
     brew install tesseract
 
+🍎 Linux Users
 
+Run this in Terminal:
+
+   <!-- `brew install tesseract` -->
+    sudo apt install tesseract-ocr
 
 ---
 
@@ -57,7 +62,8 @@ After installation, restart your terminal and run:
 
 If it prints version details → Installation successful.
 
-# ✅ STEP Create Virtual Environment
+Before moving to next step restarting your system is recommended or atleast powershell or terminal and code editor.
+# ✅ STEP Create Virtual Environment 
 
 Run this in terminal:
 
@@ -70,7 +76,7 @@ Activate Virtual Environment
       
       2.     .venv/Scripts/Activate
 
-  - Mac
+  - Mac/Linux
     -     source .venv/bin/activate
 
 If activated correctly, you will see:
