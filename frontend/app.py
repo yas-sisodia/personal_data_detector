@@ -50,6 +50,7 @@ defaults = {
     "progress_percent": 0,
     "progress_step": "",
     "enable_caption": True,
+    "start_time": None, 
 }
 
 for k, v in defaults.items():
@@ -199,6 +200,7 @@ if uploaded and uploaded.name != st.session_state.last_file_name:
 
     st.rerun()
 
+
 # ==============================================================================
 # Layout
 
@@ -214,6 +216,7 @@ with left_col:
         else:
             st.video(st.session_state.uploaded_file)
 
+
     progress_placeholder = st.empty()
     status_placeholder = st.empty()
 
@@ -224,6 +227,10 @@ with left_col:
         status_placeholder.markdown(
             f"**{st.session_state.progress_step}**"
         )
+    elif "start_time" in st.session_state and st.session_state.start_time is not None and st.session_state.is_analyzing is not True and st.session_state.is_analyzing is not 1:
+            elapsed_time = time.time() - st.session_state.start_time
+            elapsed_time_str = time.strftime("%H:%M:%S", time.gmtime(elapsed_time))  # Format as HH:MM:SS
+            st.markdown(f" ⏱️ Total Processing Time: {elapsed_time_str}")
     else:
         st.info("Select an image or video to begin")
     
@@ -232,6 +239,8 @@ with left_col:
 # Start analysis (only once)
 
 if st.session_state.trigger_analysis and not st.session_state.analysis_started:
+     # Start time for the analysis
+    st.session_state.start_time = time.time()
 
     st.session_state.analysis_started = True
     st.session_state.trigger_analysis = False
@@ -324,6 +333,11 @@ if st.session_state.ws_queue:
             st.session_state.ws_thread = None
             st.session_state.ws_queue = None
 
+            # ====
+                # Calculate and display the total time spent on processing
+
+
+
             st.rerun()   # 🔥 force UI refresh
 
 
@@ -339,6 +353,11 @@ with right_col:
     if st.session_state.show_results and st.session_state.result:
 
         st.subheader("📊 Sensitivity Analysis Results")
+
+
+
+
+# ========
 
         st.markdown("### 📄 Extracted Text")
         st.text_area(
@@ -405,6 +424,8 @@ word-wrap:break-word;
 </div>""",
                 unsafe_allow_html=True
             )
+
+
 
 # ==============================================================================
 # Controlled polling loop
