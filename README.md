@@ -3,7 +3,7 @@
 RAM : 16 GB ( recommended )
 
 
-# Make sure python version should be 3.11x(stable and wide support) 
+# Make sure python version should be 3.11.x(stable and wide support) 
 
 download link : https://www.python.org/downloads/release/python-3119/
 
