@@ -41,7 +41,9 @@ Tesseract is required for OCR (extracting text from images).
 
 Run this in Terminal:
 
-   `brew install tesseract`
+   <!-- `brew install tesseract` -->
+    brew install tesseract
+
 
 
 ---
@@ -57,17 +59,19 @@ If it prints version details → Installation successful.
 
 # ✅ STEP Create Virtual Environment
 
-Run this in terminal
-  - python -m venv .venv
+Run this in terminal:
+
+    python -m venv .venv
 
 Activate Virtual Environment
-  - windows -
+  - windows:
   
-    - Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-    - .venv/Scripts/Activate
+      1.     Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+      
+      2.     .venv/Scripts/Activate
 
   - Mac
-    - source .venv/bin/activate
+    -     source .venv/bin/activate
 
 If activated correctly, you will see:
 
@@ -79,12 +83,12 @@ It is variable named as "token" in this file
 
 # ✅ STEP run below command in .venv terminal
 
-pip install -r requirements.txt
+    pip install -r requirements.txt
 
 # ✅ STEP run setup.py by pasting below command in .venv terminal
 
 
-python setup.py
+    python setup.py
 
 
 # ✅ STEP — Start Backend (FastAPI) and Frontend (Streamlit)
@@ -200,15 +204,17 @@ The pipeline processes images through a series of steps as shown in the diagram 
 Video pipeline works saame as image pipeline. Vidos is breaked into frames which are different . we take 2 frames from start and 2 from middle an 2 from end then we proceed according to image pipeline.
 
 ## UI
+<!-- 
+![UI](https://github.com/user-attachments/assets/4f1163dc-5e08-4509-986b-4b717052686b) -->
 
-![UI](https://github.com/user-attachments/assets/4f1163dc-5e08-4509-986b-4b717052686b)
+<img src="https://github.com/user-attachments/assets/4f1163dc-5e08-4509-986b-4b717052686b" height="300" />
 
 
 ## Results
 
-[chat](https://github.com/user-attachments/files/25533659/chat.pdf)
+[Amage showing chatting](https://github.com/user-attachments/files/25533659/chat.pdf)
 
-[food](https://github.com/user-attachments/files/25533670/food.pdf)
+[ A general food iamge](https://github.com/user-attachments/files/25533670/food.pdf)
 
 <!-- 
 docker build -t personal_data_app . 
