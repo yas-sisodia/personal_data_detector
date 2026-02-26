@@ -7,7 +7,7 @@ RAM : 16 GB ( recommended )
 
 download link : https://www.python.org/downloads/release/python-3119/
 
-# ✅ STEP  Install Tesseract OCR
+# ✅ STEP  Install Tesseract OCR ( version 5.5.0 )
 
 Tesseract is required for OCR (extracting text from images).
 
