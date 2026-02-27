@@ -1,6 +1,7 @@
  
 # System Requirements 
 RAM : 16 GB ( recommended )
+ROM : 30 GB
 
 
 # Make sure python version should be 3.11.x(stable and wide support) 
