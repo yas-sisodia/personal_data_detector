@@ -34,6 +34,8 @@ Tesseract is required for OCR (extracting text from images).
    - Add:
      C:\Program Files\Tesseract-OCR
    - Click OK and restart terminal / VS Code
+     
+<img width="1200" height="900" alt="set env variables" src="https://github.com/user-attachments/assets/bb7c4b05-e32b-4e2a-85c5-f5d0e1d6e782" />
 
 ---
 
